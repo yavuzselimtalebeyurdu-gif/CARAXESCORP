@@ -151,50 +151,16 @@ body{font-family:'Rajdhani',sans-serif;font-size:16px}
 @media(max-width:600px){.ai-status{font-size:7px;padding:7px}.ai-rail{padding:15px;grid-template-columns:46px 1fr;column-gap:12px}.ai-rail-mark{width:44px;height:44px;font-size:12px}.ai-rail h3{font-size:16px}.ai-rail>p{font-size:10px}.ai-chat{min-height:520px}.ai-chat-head{padding:12px}.ai-chat-head strong{font-size:9px}.ai-clear{font-size:7px;padding:7px}.ai-messages{padding:14px;min-height:280px}.ai-message{max-width:96%;font-size:12px}.ai-compose{padding:10px;gap:7px}.ai-compose .primary-btn{min-width:82px;padding:10px 8px;font-size:8px}.ai-compose-foot{font-size:7px;padding:0 11px 10px}.ai-quick-prompts{padding:0 10px 12px}.ai-quick-prompts button{font-size:7px;padding:8px}}
 
 
-/* CARAXESCORP additions: account, media gallery and CYBER signature */
-#accountNameRow[hidden],#accountLoggedIn[hidden],#accountLoggedOut[hidden]{display:none!important}
-.cyber-signature{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:58px 18px 42px;margin:20px 0 8px;position:relative;overflow:hidden;border-top:1px solid rgba(120,255,180,.14);background:radial-gradient(ellipse at 50% 45%,rgba(23,100,62,.13),transparent 54%)}
-.cyber-portrait-wrap{position:relative;width:min(320px,76vw);aspect-ratio:366/378;overflow:hidden;border-radius:18px;background:#05080a;box-shadow:0 0 34px rgba(36,255,130,.12),0 0 90px rgba(0,0,0,.55);animation:cyberBreath 5.8s ease-in-out infinite;border:1px solid rgba(110,255,165,.2)}
-.cyber-portrait{width:100%;height:100%;display:block;object-fit:cover;filter:contrast(1.08) brightness(.83);}
-.cyber-eyes{position:absolute;left:35%;top:30.5%;width:30%;height:9%;display:flex;justify-content:space-between;align-items:center;pointer-events:none;animation:cyberBlink 5.4s infinite}
-.cyber-eyes i{display:block;width:34%;height:24%;border-radius:50%;background:#72ff9b;box-shadow:0 0 7px 3px rgba(65,255,123,.9),0 0 20px 7px rgba(44,255,109,.55);filter:blur(2px)}
-.cyber-scanline{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(to bottom,transparent 0 5px,rgba(80,255,142,.045) 6px,transparent 7px);mix-blend-mode:screen;opacity:.48}
-.cyber-wordmark{font-family:'Arial Black',Impact,sans-serif;font-size:clamp(42px,8vw,76px);font-weight:900;letter-spacing:.25em;padding-left:.25em;color:#b8ffd0;text-shadow:0 0 8px rgba(88,255,144,.7),0 0 24px rgba(53,255,125,.48),0 0 55px rgba(42,255,117,.28);line-height:1.05}
-.cyber-signature-caption{font:10px/1.5 ui-monospace,monospace;letter-spacing:.28em;color:#80a88f;text-align:center}
-@keyframes cyberBreath{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.018)}}
-@keyframes cyberBlink{0%,44%,48%,100%{opacity:.95}45%,47%{opacity:.08}72%{opacity:.75}74%{opacity:.08}76%{opacity:.9}}
-.account-shell{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(230px,.85fr);gap:20px;max-width:900px;margin:22px auto 40px}
-.account-panel{padding:26px;min-height:360px}
-.account-status{display:flex;gap:10px;align-items:center;font:10px ui-monospace,monospace;letter-spacing:.12em;color:var(--muted);margin-bottom:20px}
-.account-tabs{display:flex;gap:8px;margin-bottom:22px;border-bottom:1px solid var(--line)}
-.account-tab{background:transparent;border:0;color:var(--muted);padding:11px 15px;font-size:11px;letter-spacing:.1em;border-bottom:2px solid transparent}
-.account-tab.active{color:var(--text);border-bottom-color:var(--accent2)}
-.account-panel .form-row input{width:100%;min-height:44px}
-.account-submit{width:100%;margin-top:6px;justify-content:center}
-.account-legal,.gallery-footnote{font-size:11px;line-height:1.7;color:var(--muted);margin-top:18px}
-.account-side-note{padding:24px 20px;border:1px solid var(--line);border-radius:var(--radius,16px);background:linear-gradient(145deg,rgba(89,74,163,.12),rgba(8,30,28,.16));align-self:stretch}
-.account-side-note h3{font-size:20px;line-height:1.3;margin:14px 0}
-.account-side-note p{font-size:12px;line-height:1.8;color:var(--muted)}
-.security-chip{display:inline-block;margin-top:15px;padding:8px 10px;border:1px solid rgba(93,225,255,.2);border-radius:7px;color:var(--accent2);font:9px ui-monospace,monospace;letter-spacing:.08em}
-.account-message{min-height:22px;margin-top:12px;font-size:12px;color:var(--accent2)}
-.account-avatar{width:56px;height:56px;border:1px solid var(--accent2);border-radius:14px;display:grid;place-items:center;color:var(--accent2);font-weight:900;letter-spacing:.1em;margin:8px 0 18px;box-shadow:0 0 22px rgba(92,225,255,.13)}
-.account-user-email{color:var(--muted);font-size:12px}
-.account-plan{display:flex;justify-content:space-between;align-items:center;padding:13px 15px;margin:22px 0;border:1px solid var(--line);border-radius:8px;font-size:10px;letter-spacing:.12em}
-.account-plan strong{color:var(--good)}
-.gallery-panel{padding:22px}
-.gallery-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
-.gallery-toolbar h3{margin:0 0 5px;font-size:16px;letter-spacing:.12em}
-.gallery-toolbar p{margin:0;color:var(--muted);font-size:11px}
-.gallery-pick{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
-.gallery-empty{grid-column:1/-1;min-height:205px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);text-align:center;padding:22px}
-.gallery-empty span{font-size:34px;color:var(--accent2)}
-.gallery-empty b{font-size:11px;letter-spacing:.15em;color:var(--text)}
-.gallery-empty small{max-width:480px;font-size:11px;line-height:1.7}
-.gallery-item{border:1px solid var(--line);background:rgba(10,10,20,.8);border-radius:10px;overflow:hidden}
-.gallery-item img,.gallery-item video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#050509}
-.gallery-item p{padding:9px 11px;margin:0;color:var(--muted);font-size:11px;overflow-wrap:anywhere}
-@media(max-width:780px){.account-shell{grid-template-columns:1fr}.account-side-note{order:2}.gallery-toolbar{align-items:flex-start;flex-direction:column}.cyber-signature{padding-top:40px}}
+/* CYBER signature image — original Anonymous mask preserved */
+.cyber-signature{margin:58px auto 28px;max-width:720px;padding:30px 18px 42px;text-align:center;position:relative;overflow:hidden;border:1px solid rgba(0,246,255,.18);background:radial-gradient(ellipse at 50% 30%,rgba(0,246,255,.08),transparent 65%),rgba(2,6,15,.55);border-radius:18px;box-shadow:0 0 34px rgba(0,246,255,.07),inset 0 0 32px rgba(0,0,0,.5)}
+.cyber-mask-wrap{position:relative;width:min(100%,390px);margin:0 auto;overflow:hidden;border-radius:12px;box-shadow:0 0 35px rgba(0,0,0,.8);animation:maskBreathe 5s ease-in-out infinite;transform-origin:50% 65%}
+.cyber-mask-wrap img{display:block;width:100%;height:auto;filter:contrast(1.04) brightness(.9)}
+.cyber-mask-wrap:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 8% 2.8% at 39% 19%,rgba(0,255,70,.68),rgba(0,255,70,.18) 45%,transparent 100%),radial-gradient(ellipse 8% 2.8% at 62% 19%,rgba(0,255,70,.68),rgba(0,255,70,.18) 45%,transparent 100%);mix-blend-mode:screen;animation:eyePulse 2.8s ease-in-out infinite}
+.cyber-signature h2{margin:24px 0 0;font-family:'Orbitron',sans-serif;font-size:clamp(36px,8vw,66px);font-weight:900;letter-spacing:.22em;color:#eafff0;text-shadow:0 0 8px #00ff55,0 0 24px rgba(0,255,85,.55),2px 0 #00d9ff}
+.cyber-signature .cyber-caption{margin-top:8px;color:#6c8792;font:9px 'Space Mono',monospace;letter-spacing:.28em}
+@keyframes maskBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.012)}}
+@keyframes eyePulse{0%,100%{opacity:.58;filter:blur(2px)}50%{opacity:1;filter:blur(4px)}}
+@media(max-width:600px){.cyber-signature{margin:35px 0 18px;padding:20px 12px 28px}.cyber-mask-wrap{width:min(100%,330px)}}
 
 </style>
 </head>
@@ -227,9 +193,7 @@ body{font-family:'Rajdhani',sans-serif;font-size:16px}
     <button data-page="menu"><span class="nav-ico">◈</span> Menü</button>
     <button data-page="help"><span class="nav-ico">?</span> Yardım</button>
     <button data-page="ai"><span class="nav-ico">✦</span> CARAX AI</button>
-    <button data-page="account"><span class="nav-ico">◎</span> Hesap</button>
-  <button data-page="gallery"><span class="nav-ico">▧</span> Galeri</button>
-  <button data-page="links"><span class="nav-ico">↗</span> Bağlantılar</button>
+    <button data-page="links"><span class="nav-ico">↗</span> Bağlantılar</button>
     <button data-page="notes"><span class="nav-ico">▤</span> Ders Notları</button>
     <button data-page="giveaways"><span class="nav-ico">✧</span> Çekilişler</button>
     <button data-page="game"><span class="nav-ico">▱</span> Mini Oyun</button>
@@ -247,16 +211,8 @@ body{font-family:'Rajdhani',sans-serif;font-size:16px}
      <div class="feature-card" onclick="navigate('giveaways')"><div class="feature-ico">✧</div><h3>ACTIVE SIGNAL</h3><p>Devam eden çekilişe katıl ve katılımcı listesini görüntüle.</p></div>
      <div class="feature-card" onclick="navigate('game')"><div class="feature-ico">▱</div><h3>VOID RUNNER</h3><p>Uzay gemini seç, sektörleri geç ve yeni gemiler aç.</p></div>
     </div>
-    <div class="cyber-signature" aria-label="CYBER signature">
-  <div class="cyber-portrait-wrap">
-   <img src="assets/cyber-face.png" alt="Kapüşonlu, maskeli cyber portre" class="cyber-portrait" loading="lazy">
-   <div class="cyber-eyes" aria-hidden="true"><i></i><i></i></div>
-   <div class="cyber-scanline" aria-hidden="true"></div>
-  </div>
-  <div class="cyber-wordmark">CYBER</div>
-  <div class="cyber-signature-caption">CARAXESCORP // DIGITAL IDENTITY</div>
- </div>
-<footer><span>CARAXESCORP / DIGITAL FRONTIER</span><span>BUILD 0.9.7 · TEST ENVIRONMENT</span></footer>
+    <section class="cyber-signature" aria-label="CYBER mask signature"><div class="cyber-mask-wrap"><img src="assets/cyber-mask.jpg" alt="Kapüşonlu Anonymous maskesi"></div><h2>CYBER</h2><div class="cyber-caption">ANONYMOUS // DIGITAL SHADOW</div></section>
+    <footer><span>CARAXESCORP / DIGITAL FRONTIER</span><span>BUILD 0.9.7 · TEST ENVIRONMENT</span></footer>
    </section>
    <section class="view" id="view-menu"><div class="section-head"><div><div class="eyebrow">SYSTEM DIRECTORY</div><h2>MENÜ</h2><p>Evrenin farklı bölümlerine buradan ulaşabilirsin. Her alan ayrı bir sayfa olarak açılır.</p></div></div>
     <div class="card-grid">
@@ -322,63 +278,10 @@ body{font-family:'Rajdhani',sans-serif;font-size:16px}
     <div class="link-grid">
      <article class="link-tile"><div class="eyebrow">STEAM COMMUNITY</div><h3>CYBER'in Steam hesabı</h3><p>steamcommunity.com / profile</p><a class="primary-btn" href="https://steamcommunity.com/profiles/76561199799498966/" target="_blank" rel="noopener noreferrer">GİT ↗</a></article>
      <article class="link-tile"><div class="eyebrow">INSTAGRAM</div><h3>@yakupbakan_</h3><p>Instagram profili</p><a class="primary-btn" href="https://www.instagram.com/yakupbakan_/" target="_blank" rel="noopener noreferrer">GİT ↗</a></article>
-     <article class="link-tile"><div class="eyebrow">EXTERNAL NODE</div><div aria-hidden="true" style="font-size:34px;line-height:1.2;margin:8px 0 12px">😛</div><h3>PAYLAŞILAN BAĞLANTI</h3><p>Harici bağlantı</p><a class="primary-btn" href="#" id="protectedLinkButton" aria-label="Şifreli bağlantıyı aç">ŞİFREYLE AÇ ↗</a></article>
+     <article class="link-tile"><div class="eyebrow">EXTERNAL NODE</div><div aria-hidden="true" style="font-size:34px;line-height:1.2;margin:8px 0 12px">😛</div><h3>PAYLAŞILAN BAĞLANTI</h3><p>Harici bağlantı</p><button class="primary-btn" id="protectedFileBtn" type="button">DOSYAYI AÇ ↗</button></article>
     </div><footer><span>LINK DIRECTORY</span><span>CARAXESCORP</span></footer>
    </section>
-<section class="view" id="view-account">
- <div class="section-head">
-  <div>
-   <div class="eyebrow">IDENTITY NODE // FREE ACCESS</div>
-   <h2>HESAP SİSTEMİ</h2>
-   <p>Ücretsiz hesabını oluştur, oturum aç ve CARAXESCORP hesabını yönet.</p>
-  </div>
-  <span class="role-pill">FREE MEMBERSHIP</span>
- </div>
- <div class="account-shell">
-  <div class="panel account-panel">
-   <div class="account-status"><span class="online-dot"></span><span id="accountConnectionText">API BAĞLANTISI BEKLENİYOR</span></div>
-   <div id="accountLoggedOut">
-    <div class="account-tabs">
-     <button type="button" class="account-tab active" id="accountLoginTab">GİRİŞ YAP</button>
-     <button type="button" class="account-tab" id="accountRegisterTab">HESAP OLUŞTUR</button>
-    </div>
-    <form id="accountForm" autocomplete="on">
-     <div class="form-row" id="accountNameRow" hidden><label for="accountName">GÖRÜNEN AD</label><input id="accountName" name="displayName" maxlength="40" autocomplete="nickname" placeholder="Kullanıcı adın"/></div>
-     <div class="form-row"><label for="accountEmail">E-POSTA</label><input id="accountEmail" name="email" type="email" maxlength="254" autocomplete="email" placeholder="ornek@eposta.com" required/></div>
-     <div class="form-row"><label for="accountPassword">ŞİFRE</label><input id="accountPassword" name="password" type="password" minlength="10" maxlength="128" autocomplete="current-password" placeholder="En az 10 karakter" required/></div>
-     <button class="primary-btn account-submit" id="accountSubmit" type="submit">GİRİŞ YAP ↗</button>
-    </form>
-    <p class="account-legal">Bu sürümde tüm yeni hesaplar ücretsizdir. Ödeme alınmaz; Premium/otomatik ödeme etkin değildir.</p>
-   </div>
-   <div id="accountLoggedIn" hidden>
-    <div class="account-avatar" aria-hidden="true">CC</div>
-    <div class="eyebrow">SESSION ACTIVE</div>
-    <h3 id="accountWelcome">Hoş geldin</h3>
-    <p id="accountUserEmail" class="account-user-email"></p>
-    <div class="account-plan"><span>ÜYELİK</span><strong>ÜCRETSİZ</strong></div>
-    <button type="button" class="ghost-btn" id="accountLogout">OTURUMU KAPAT</button>
-   </div>
-   <div id="accountMessage" class="account-message" role="status" aria-live="polite"></div>
-  </div>
-  <div class="account-side-note">
-   <div class="eyebrow">ACCOUNT SECURITY</div>
-   <h3>Hesabın sunucu tarafında korunur.</h3>
-   <p>Parolalar düz metin olarak saklanmaz. Hesap kayıtları Cloudflare D1 veritabanında tutulur. Giriş oturumu tarayıcı oturumu boyunca korunur.</p>
-   <div class="security-chip">PBKDF2 · D1 DATABASE · API AUTH</div>
-  </div>
- </div>
- <footer><span>IDENTITY NODE</span><span>FREE ACCOUNTS</span></footer>
-</section>
-<section class="view" id="view-gallery">
- <div class="section-head"><div><div class="eyebrow">MEDIA ARCHIVE // VISUAL SIGNALS</div><h2>MEDYA GALERİSİ</h2><p>CARAXESCORP fotoğraf ve video arşivi.</p></div><span class="role-pill">MEDIA ARCHIVE</span></div>
- <div class="panel gallery-panel">
-  <div class="gallery-toolbar"><div><h3>ARŞİV</h3><p>Yayınlanan medya dosyaları burada listelenir.</p></div><label class="secondary-btn gallery-pick" for="galleryLocalFiles">YEREL ÖNİZLEME EKLE</label><input id="galleryLocalFiles" type="file" accept="image/*,video/*" multiple hidden></div>
-  <div id="galleryGrid" class="gallery-grid"><div class="gallery-empty"><span>▧</span><b>ARŞİV ŞİMDİLİK BOŞ</b><small>Kalıcı yayın için medya dosyalarını assets/gallery klasörüne ekleyip manifest.json dosyasına kaydet.</small></div></div>
-  <p class="gallery-footnote">Yerel önizleme yalnızca bu tarayıcıda görünür; siteye kalıcı yükleme yapmaz. Kalıcı yayın, GitHub deposuna dosya eklenerek yapılır. Büyük videolar için video barındırma servisi tercih et.</p>
- </div>
- <footer><span>MEDIA ARCHIVE</span><span>IMAGE / VIDEO</span></footer>
-</section>
-<section class="view" id="view-notes"><div class="section-head"><div><div class="eyebrow">KNOWLEDGE ARCHIVE // STUDY FILES</div><h2>DERS NOTLARI</h2><p>Yüklenen ders PDF'leri. Bir nota tıklayarak belgeyi yeni sekmede açabilirsin.</p></div></div>
+   <section class="view" id="view-notes"><div class="section-head"><div><div class="eyebrow">KNOWLEDGE ARCHIVE // STUDY FILES</div><h2>DERS NOTLARI</h2><p>Arşivdeki ders dosyalarını görüntüleyebilirsin.</p></div></div>
     <div class="notes-grid">
      <a class="note-entry" id="pdfGeography" data-pdf-key="geography" href="assets/notes/cografya-4.pdf" target="_blank" rel="noopener noreferrer" aria-label="Coğrafya 4 PDF dosyasını aç"><span class="note-index">01 / AÖL</span><span class="note-title">COĞRAFYA 4</span><span class="note-meta">10. SINIF · 6 SAYFA · PDF</span><span class="note-open">DOSYAYI AÇ <b>↗</b></span></a>
      <a class="note-entry" id="pdfHistory" data-pdf-key="history" href="assets/notes/tarih-4.pdf" target="_blank" rel="noopener noreferrer" aria-label="Tarih 4 PDF dosyasını aç"><span class="note-index">02 / AÖL</span><span class="note-title">TARİH 4</span><span class="note-meta">10. SINIF · 2 SAYFA · PDF</span><span class="note-open">DOSYAYI AÇ <b>↗</b></span></a>
@@ -688,183 +591,20 @@ window.addEventListener('resize',()=>{if(!heroSkull)initHomeSkull()});
 
 
 <script>
-/* CARAXESCORP account / protected-link / gallery client */
-(() => {
-  'use strict';
-  // After deploying the Worker, replace this URL with its workers.dev address.
-  const API_BASE = 'https://YOUR-WORKER.workers.dev';
-  const TOKEN_KEY = 'carax_session_token';
-  const $ = (id) => document.getElementById(id);
-  const configured = !API_BASE.includes('YOUR-WORKER');
-  let accountMode = 'login';
-
-  function setMessage(message, isError = false) {
-    const el = $('accountMessage');
-    if (!el) return;
-    el.textContent = message;
-    el.style.color = isError ? 'var(--danger)' : 'var(--accent2)';
-  }
-  function setConnection(message, online = false) {
-    const el = $('accountConnectionText');
-    if (!el) return;
-    el.textContent = message;
-    el.style.color = online ? 'var(--good)' : 'var(--muted)';
-  }
-  function token() { try { return sessionStorage.getItem(TOKEN_KEY) || ''; } catch { return ''; } }
-  function saveToken(value) { try { sessionStorage.setItem(TOKEN_KEY, value); } catch {} }
-  function clearToken() { try { sessionStorage.removeItem(TOKEN_KEY); } catch {} }
-
-  async function api(path, options = {}) {
-    if (!configured) throw new Error('Önce Cloudflare Worker adresi index.html dosyasına eklenmeli.');
-    const headers = new Headers(options.headers || {});
-    headers.set('Content-Type', 'application/json');
-    const currentToken = token();
-    if (currentToken) headers.set('Authorization', `Bearer ${currentToken}`);
-    let response;
-    try {
-      response = await fetch(`${API_BASE}${path}`, { ...options, headers, mode: 'cors', credentials: 'omit' });
-    } catch {
-      throw new Error('Sunucuya ulaşılamadı. Worker adresini ve ALLOWED_ORIGIN ayarını kontrol et.');
-    }
-    let data = {};
-    try { data = await response.json(); } catch {}
-    if (!response.ok) throw new Error(data.error || `İstek başarısız (${response.status}).`);
-    return data;
-  }
-
-  function showLoggedOut() {
-    $('accountLoggedOut').hidden = false;
-    $('accountLoggedIn').hidden = true;
-  }
-  function showLoggedIn(user) {
-    $('accountLoggedOut').hidden = true;
-    $('accountLoggedIn').hidden = false;
-    $('accountWelcome').textContent = `Hoş geldin, ${user.name}`;
-    $('accountUserEmail').textContent = user.email;
-    setConnection('HESAP SUNUCUYA BAĞLI', true);
-  }
-  function setMode(mode) {
-    accountMode = mode;
-    $('accountLoginTab').classList.toggle('active', mode === 'login');
-    $('accountRegisterTab').classList.toggle('active', mode === 'register');
-    $('accountNameRow').hidden = mode !== 'register';
-    $('accountPassword').setAttribute('autocomplete', mode === 'register' ? 'new-password' : 'current-password');
-    $('accountSubmit').textContent = mode === 'register' ? 'ÜCRETSİZ HESAP OLUŞTUR ↗' : 'GİRİŞ YAP ↗';
-    setMessage('');
-  }
-
-  $('accountLoginTab')?.addEventListener('click', () => setMode('login'));
-  $('accountRegisterTab')?.addEventListener('click', () => setMode('register'));
-  $('accountForm')?.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const button = $('accountSubmit');
-    const email = $('accountEmail').value.trim().toLowerCase();
-    const password = $('accountPassword').value;
-    const displayName = $('accountName').value.trim();
-    if (!email || !password || (accountMode === 'register' && !displayName)) return setMessage('Gerekli alanları doldur.', true);
-    if (accountMode === 'register' && password.length < 10) return setMessage('Şifre en az 10 karakter olmalı.', true);
-    button.disabled = true;
-    button.textContent = 'BAĞLANIYOR...';
-    setMessage('');
-    try {
-      const data = await api(accountMode === 'register' ? '/api/register' : '/api/login', {
-        method: 'POST', body: JSON.stringify({ email, password, displayName })
-      });
-      if (!data.token || !data.user) throw new Error('Sunucudan geçerli oturum yanıtı alınamadı.');
-      saveToken(data.token);
-      showLoggedIn(data.user);
-      setMessage(accountMode === 'register' ? 'Hesabın oluşturuldu.' : 'Giriş başarılı.');
-    } catch (error) {
-      setMessage(error.message || 'Bir hata oluştu.', true);
-    } finally {
-      button.disabled = false;
-      button.textContent = accountMode === 'register' ? 'ÜCRETSİZ HESAP OLUŞTUR ↗' : 'GİRİŞ YAP ↗';
-    }
-  });
-
-  $('accountLogout')?.addEventListener('click', async () => {
-    try { await api('/api/logout', { method: 'POST', body: '{}' }); } catch {}
-    clearToken(); showLoggedOut(); setMessage('Oturum kapatıldı.');
-    setConnection(configured ? 'API HAZIR' : 'API BAĞLANTISI BEKLENİYOR', false);
-  });
-
-  async function restoreSession() {
-    if (!configured) {
-      setConnection('CLOUDFLARE WORKER KURULUMU BEKLENİYOR');
-      setMessage('Hesapları etkinleştirmek için Worker kurulumunu tamamlayıp API adresini bu dosyaya yaz.');
+// Basit istemci tarafı erişim kodu: 3131. Gerçek sunucu güvenliği sağlamaz.
+document.addEventListener('DOMContentLoaded', function () {
+  var protectedButton = document.getElementById('protectedFileBtn');
+  if (!protectedButton) return;
+  protectedButton.addEventListener('click', function () {
+    var code = window.prompt('DOSYA ERİŞİM KODUNU GİRİN');
+    if (code === null) return;
+    if (code.trim() !== '3131') {
+      window.alert('HATALI KOD // ERİŞİM REDDEDİLDİ');
       return;
     }
-    setConnection('API BAĞLANTISI KONTROL EDİLİYOR...');
-    try { await api('/api/health', { method: 'GET' }); } catch (error) { setConnection('API BAĞLANTI HATASI'); setMessage(error.message, true); return; }
-    if (!token()) { setConnection('API ÇEVRİMİÇİ', true); return; }
-    try {
-      const data = await api('/api/me', { method: 'GET' });
-      showLoggedIn(data.user);
-    } catch {
-      clearToken(); showLoggedOut(); setConnection('API ÇEVRİMİÇİ', true);
-    }
-  }
-
-  $('protectedLinkButton')?.addEventListener('click', async (event) => {
-    event.preventDefault();
-    const password = window.prompt('Bu bağlantı şifre korumalı. Erişim kodunu gir:');
-    if (password === null) return;
-    const newTab = window.open('about:blank', '_blank');
-    if (!newTab) { window.alert('Yeni sekme açılamadı. Tarayıcı açılır pencere iznini kontrol et.'); return; }
-    try {
-      const data = await api('/api/protected/unlock', { method: 'POST', body: JSON.stringify({ password }) });
-      const target = new URL(data.url);
-      if (target.protocol !== 'https:') throw new Error('Sunucudan güvenli bağlantı alınamadı.');
-      newTab.location.replace(target.href);
-      newTab.opener = null;
-    } catch (error) {
-      newTab.close();
-      if (typeof window.toast === 'function') window.toast(error.message || 'Bağlantı açılamadı.');
-      else window.alert(error.message || 'Bağlantı açılamadı.');
-    }
+    window.open('https://share.google/fPNBXiEJpiLFSrcaR', '_blank', 'noopener,noreferrer');
   });
-
-  const mediaGrid = $('galleryGrid');
-  function appendMedia(item, localUrl = false) {
-    if (!mediaGrid) return;
-    const empty = mediaGrid.querySelector('.gallery-empty');
-    if (empty) empty.remove();
-    const card = document.createElement('article'); card.className = 'gallery-item';
-    let media;
-    if (item.type === 'video') { media = document.createElement('video'); media.controls = true; media.preload = 'metadata'; }
-    else { media = document.createElement('img'); media.loading = 'lazy'; media.alt = item.title || 'CARAXESCORP medya'; }
-    media.src = item.src;
-    const caption = document.createElement('p'); caption.textContent = item.title || 'CARAXESCORP MEDIA';
-    card.append(media, caption); mediaGrid.append(card);
-    if (localUrl) card.dataset.localPreview = 'true';
-  }
-  async function loadPublishedGallery() {
-    if (!mediaGrid) return;
-    try {
-      const response = await fetch('assets/gallery/manifest.json', { cache: 'no-store' });
-      if (!response.ok) throw new Error('manifest not found');
-      const data = await response.json();
-      if (Array.isArray(data.items)) data.items.forEach(item => {
-        if (!item || typeof item.src !== 'string') return;
-        try { const url = new URL(item.src, location.href); if (url.origin !== location.origin) return; } catch { return; }
-        appendMedia({ type: item.type === 'video' ? 'video' : 'image', src: item.src, title: String(item.title || '').slice(0,120) });
-      });
-    } catch {}
-  }
-  $('galleryLocalFiles')?.addEventListener('change', (event) => {
-    const files = Array.from(event.target.files || []);
-    files.forEach(file => {
-      if (!(file.type.startsWith('image/') || file.type.startsWith('video/'))) return;
-      const url = URL.createObjectURL(file);
-      appendMedia({ type: file.type.startsWith('video/') ? 'video' : 'image', src: url, title: file.name }, true);
-    });
-    event.target.value = '';
-    if (files.length && typeof window.toast === 'function') window.toast('Yerel önizleme eklendi; siteye kalıcı yüklenmedi.');
-  });
-
-  restoreSession();
-  loadPublishedGallery();
-})();
+});
 </script>
 
 </body></html>
